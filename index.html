@@ -7,6 +7,7 @@
   <title>Presto mebel</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -51,7 +52,7 @@
       </div>
       <div class="header__phone">
         <a href="tel:+33435752547" class="header__tel">+3 (343) 575 25 47</a>
-        <a href="#" class="header__call">Заказать звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="header__call">Заказать звонок</a>
       </div>
       <a href="mailto:shkaf@gmail.com" class="header__mail">shkaf@gmail.com</a>
     </div>
@@ -91,7 +92,7 @@
             <div class="promo__info">
               <div class="promo__box">
                 <p class="promo__accent">Хит продаж!</p>
-                <p class="promo__title">Шкаф-купе Деко</p>
+                <p class="promo__title">Шкаф-купе ДЕКО</p>
                 <p class="promo__text">-10% скидка</p>
               </div>
               <div class="promo__wrap">
@@ -207,7 +208,7 @@
       <p class="title-h2">Контакты</p>
       <div class="contacts__block">
         <div class="contacts__map">
-          <iframe src="https://snazzymaps.com/embed/107753" width="100%" height="485px" style="border:none;"></iframe>
+          <iframe src="https://snazzymaps.com/embed/107753" width="100%" height="485px"></iframe>
         </div>
         <div class="contacts__info">
           <address><i class="fa fa-map-marker-alt"></i> г. Москва ул. Чаплыгина 25</address>
@@ -245,14 +246,27 @@
       </div>
       <div class="footer__contacts">
         <a href="tel:+33435752547" class="footer__phone"><i class="fa fa-phone"></i> +3 (343) 575 25 47</a>
-        <a href="#" class="footer__call">Заказать звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="footer__call">Заказать звонок</a>
         <p class="footer__time"><b>График работы:</b>Пн- Сб: 10:00 - 19:00</p>
       </div>
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title"><span>Оставьте заявку</span>и наш менеджер свяжется с Вами</p>
+    <form action="#" method="post" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <button type="submit" class="form__btn modal__btn">Оставить заявку</button>
+      <input type="checkbox" id="check" class="form__check" checked>
+      <label for="check" class="form__checkbox">Даю согласие на обработку данных</label>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
   <!-- Sliders -->
   <script>
