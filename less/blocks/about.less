@@ -1,0 +1,72 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about__link {
+  text-align: right;
+}
+
+.about__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__text {
+  width: 30%;
+  
+  p {
+    margin-top: 0;
+  }
+}
+
+.about__benefits {
+  width: 60%;
+  padding: 30px;
+  border-radius: 3px;
+  background-image: linear-gradient(to top, rgb(182,193,52) 0%, rgb(230,235,170) 100%);
+}
+
+.about__list {
+  .reset();
+  list-style: none;
+}
+
+.about__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:first-child::before {
+    width: 30px;
+    height: 28px;
+    background-image: url(../img/icon-1.png);
+  }
+  
+  &:nth-child(2)::before {
+    width: 26px;
+    height: 32px;
+    background-image: url(../img/icon-2.png);
+  }
+  
+  &:nth-child(3)::before {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-3.png);
+  }
+  
+  &:nth-child(4)::before {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-4.png);
+  }
+}

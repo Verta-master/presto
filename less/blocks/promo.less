@@ -1,0 +1,129 @@
+.promo {
+  
+}
+
+.promo__slider {
+  padding-bottom: 40px;
+  
+  .swiper-slide {
+    position: relative;
+    box-sizing: border-box;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid @blue;
+    opacity: 1;
+    outline: none;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: @blue;
+  }
+  
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 14px;
+    margin-right: 0;
+  }
+  
+  .swiper-pagination {
+    text-align: right;
+  }
+}
+
+.promo__info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 580px;
+  padding-top: 90px;
+  background-image: url(../img/shape-slide.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+
+.promo__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 170px;
+}
+
+.promo__accent {
+  margin-top: 0;
+  margin-left: 30px;
+  margin-bottom: 45px;
+  padding: 20px 50px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: @green;
+}
+
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.promo__text {
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+
+.promo__wrap {
+  padding-right: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__price {
+  margin: 0;
+  padding: 10px 30px;
+  font-size: 30px;
+  line-height: 1;
+  background-color: #fff;
+  
+  span {
+    font-weight: 700;
+  }
+}
+
+.promo__link {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: @green;
+  border-radius: 3px;
+  border: 2px solid @green;
+  .transition();
+  
+  i {
+    font-size: 16px;
+  }
+  
+  &:hover,
+  &:active {
+    color: #000;
+    background-color: @green;
+    .transition();
+  }
+}

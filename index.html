@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Presto mebel</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -88,31 +89,33 @@
           <div class="swiper-slide">
             <img src="img/img-1.jpg" alt="Slide" width="688" height="543">
             <div class="promo__info">
-              <p class="promo__accent">Хит продаж!</p>
-              <p class="promo__title">Шкаф-купе Деко</p>
-              <p class="promo__text">-10% скидка</p>
+              <div class="promo__box">
+                <p class="promo__accent">Хит продаж!</p>
+                <p class="promo__title">Шкаф-купе Деко</p>
+                <p class="promo__text">-10% скидка</p>
+              </div>
               <div class="promo__wrap">
-                <p class="promo__price">55 400<span>p.</span></p>
-                <a href="#" class="promo__link">Подробнее &rsaquo;</a>
+                <p class="promo__price"><span>55 400</span>p.</p>
+                <a href="#" class="promo__link">Подробнее <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="img/img-2.jpg" alt="Slide" width="772" height="514">
             <div class="promo__info">
-              <p class="promo__accent">Хит продаж!</p>
-              <p class="promo__title">Шкаф-купе Деко</p>
-              <p class="promo__text">-10% скидка</p>
+              <div class="promo__box">
+                <p class="promo__accent">Хит продаж!</p>
+                <p class="promo__title">Шкаф-купе Деко</p>
+                <p class="promo__text">-10% скидка</p>
+              </div>
               <div class="promo__wrap">
-                <p class="promo__price">55 400<span>p.</span></p>
-                <a href="#" class="promo__link">Подробнее &rsaquo;</a>
+                <p class="promo__price"><span>55 400</span>p.</p>
+                <a href="#" class="promo__link">Подробнее <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div class="swiper-pagination promo__pagination"></div>
-        <div class="swiper-button-prev promo__prev"></div>
-        <div class="swiper-button-next promo__next"></div>
       </div>
     </section>
     
@@ -120,9 +123,11 @@
       <p class="title-h2">О нас</p>
       <div class="about__wrap">
         <div class="about__text">
-          <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-          <a href="#" class="link">Подробнее &rsaquo;</a>
+          <div class="about__link">
+            <a href="#" class="link">Подробнее <i class="fa fa-angle-right"></i></a>
+          </div>
         </div>
         <div class="about__benefits">
           <ul class="about__list">
@@ -155,7 +160,7 @@
           <a href="#" class="work__link">Гардеробные</a>
           <a href="#" class="work__link">Прихожие</a>
         </div>
-        <a href="#" class="link">Увидеть больше &rsaquo;</a>
+        <a href="#" class="link">Увидеть больше <i class="fa fa-angle-right"></i></a>
       </div>
     </section>
     
@@ -181,7 +186,7 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="link">Читать больше &rsaquo;</a>
+      <a href="#" class="link">Читать больше <i class="fa fa-angle-right"></i></a>
     </section>
     
     <section class="contacts wrapper">
@@ -241,10 +246,6 @@
       pagination: {
         el: '.promo__pagination',
         clickable: true,
-      },
-      navigation: {
-        nextEl: '.promo__next',
-        prevEl: '.promo__prev',
       },
       simulateTouch: false,
       preventClicks: false,
