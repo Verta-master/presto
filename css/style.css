@@ -831,6 +831,27 @@ h2,
   font-weight: 700;
   text-transform: uppercase;
 }
+h3,
+.title-h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3 a,
+.title-h3 a {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+h3 a:hover,
+.title-h3 a:hover,
+h3 a:active,
+.title-h3 a:active {
+  color: #b6c134;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .about {
   padding-top: 50px;
 }
@@ -957,10 +978,17 @@ h2,
 .work__slider {
   width: 66%;
 }
+.work__slider .swiper-slide {
+  overflow: hidden;
+}
 .work__slider .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 420px;
+  min-height: 100%;
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .work__next,
 .work__prev {
@@ -1315,6 +1343,13 @@ span.breadcrumbs__link {
           align-items: stretch;
 }
 .catalog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -1335,6 +1370,7 @@ span.breadcrumbs__link {
 }
 .catalog__item .catalog__price {
   margin-top: 7px;
+  margin-bottom: 12px;
 }
 .catalog__item:hover,
 .catalog__item:active {
@@ -1392,7 +1428,19 @@ span.breadcrumbs__link {
 .catalog__btn {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 12px;
+  margin-top: auto;
+}
+.catalog__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .pages {
   margin-bottom: 30px;
@@ -1470,6 +1518,57 @@ a.pages__link:active {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.action {
+  padding-top: 40px;
+}
+.action__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.action__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+}
+.action__item time {
+  display: block;
+  margin-bottom: 5px;
+}
+.action__item time i {
+  margin-right: 7px;
+}
+.action__img {
+  width: 400px;
+}
+.action__img img {
+  display: block;
+}
+.action__info {
+  width: 600px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.action__info .link-wrap {
+  margin-top: auto;
+}
 @media (max-width: 1229px) {
   .wrapper {
     width: 100%;
@@ -1536,9 +1635,6 @@ a.pages__link:active {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .work__wrap {
-    height: auto;
-  }
   .review__list {
     display: block;
   }
@@ -1554,6 +1650,15 @@ a.pages__link:active {
   .catalog__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .action__list {
+    width: 100%;
+  }
+  .action__img {
+    width: 30%;
+  }
+  .action__info {
+    width: 67%;
   }
 }
 @media (max-width: 1022px) {
@@ -1660,6 +1765,7 @@ a.pages__link:active {
   }
   .work__wrap {
     display: block;
+    height: auto;
   }
   .work__menu {
     width: 100%;
@@ -1719,6 +1825,16 @@ a.pages__link:active {
   .promo__slider .swiper-pagination {
     text-align: center;
   }
+  .action__item {
+    display: block;
+  }
+  .action__img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .action__info {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .wrapper {
@@ -1770,5 +1886,8 @@ a.pages__link:active {
   .catalog__item {
     max-width: 100%;
     padding: 20px;
+  }
+  .action__img {
+    width: 100%;
   }
 }
