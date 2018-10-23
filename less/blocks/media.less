@@ -1,0 +1,275 @@
+@media (max-width: 1229px) {
+  .wrapper {
+    width: 100%;
+  }
+  .header__menu {
+    padding-left: 0;
+  }
+  .header__middle {
+    padding-left: 30px;
+    justify-content: space-between;
+  }
+  .logo,
+  .header__time,
+  .header__phone {
+    margin: 0;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: @blue;
+  }
+  .menu__wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .menu--opened {
+    .menu__btn {
+      background-image: url(../img/icon-menu-cross.svg);
+      background-size: 24px 24px;
+    }
+  }
+  .menu__item {
+    width: 100%;
+  }
+  .promo__info {
+    width: 50%;
+    background-size: cover;
+    background-position: center left;
+  }
+  .promo__box {
+    padding-right: 70px;
+  }
+  .work__link {
+    margin-bottom: 0;
+  }
+  .work .link-wrap {
+    margin-top: 20px;
+  }
+  .work__menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .work__wrap {
+    height: auto;
+  }
+  .review__list {
+    display: block;
+  }
+  .review__item {
+    width: 100%;
+  }
+  .review__info {
+    width: 77%;
+  }
+}
+
+//-----------------------------------------------
+@media (max-width: 1022px) {
+  .header__btn {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 110;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #c3c5cf;
+  }
+  .header__wrap {
+    position: relative;
+  }
+  .header__item {
+    margin-right: 0;
+  }
+  .header__link {
+    display: block;
+    padding: 5px 30px;
+  }
+  .header__mail,
+  .header__tel,
+  .header__call {
+    font-size: 15px;
+  }
+  .header__time,
+  .header__phone,
+  .header__mail {
+    padding-left: 40px;
+  }
+  .promo__accent {
+    font-size: 30px;
+    padding: 20px 30px;
+  }
+  .promo__title {
+    font-size: 24px;
+  }
+  .promo__text {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .promo__wrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .promo__price {
+    margin-bottom: 20px;
+  }
+  .promo__slider .swiper-slide {
+    height: 470px;
+  }
+  .promo__info {
+    padding-top: 50px;
+  }
+  .about__wrap {
+    display: block;
+  }
+  .about__text,
+  .about__benefits {
+    width: 100%;
+  }
+  .about__benefits {
+    margin-top: 30px;
+  }
+  .work__link {
+    padding: 17px;
+    font-size: 24px;
+  }
+  .review__info {
+    width: 70%;
+  }
+  .footer__block {
+    margin-right: 50px;
+  }
+}
+
+//-----------------------------------------
+@media (max-width: 766px) {
+  .header__middle {
+    flex-wrap: wrap;
+  }
+  .header__mail,
+  .header__phone,
+  .header__time {
+    width: 180px;
+  }
+  .about__benefits {
+    padding: 30px;
+  }
+  .work__wrap {
+    display: block;
+  }
+  .work__menu {
+    width: 100%;
+  }
+  .work__slider {
+    width: 100%;
+  }
+  .review__info {
+    width: 55%;
+  }
+  .footer__wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer__block {
+    margin-right: 0;
+    margin-bottom: 20px;
+    min-width: 50%;
+  }
+  .footer__contacts {
+    margin-right: auto;
+    align-items: center;
+  }
+  .promo__info {
+    position: static;
+    width: 100%;
+    padding: 30px;
+    background-image: none;
+    background-color: @blue;
+  }
+  .promo__slider .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .promo__slider .swiper-slide {
+    height: auto;
+  }
+  .promo__accent,
+  .promo__price {
+    display: none;
+  }
+  .promo__box {
+    display: block;
+    padding: 0;
+  }
+  .promo__wrap {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  .promo__slider .swiper-pagination {
+    text-align: center;
+  }
+}
+
+//-------------------------------------------
+@media (max-width: 480px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header__middle {
+    flex-direction: column;
+    padding-top: 35px;
+  }
+  .header__mail,
+  .header__phone,
+  .header__time {
+    margin-top: 10px;
+  }
+  .calc {
+    right: 10px;
+  }
+  .title-h2,
+  h2 {
+    font-size: 24px;
+  }
+  .review__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review__info {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contacts__info {
+    position: static;
+  }
+  .modal {
+    padding: 30px;
+  }
+  .footer__block {
+    width: 100%;
+  }
+}
