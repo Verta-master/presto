@@ -125,7 +125,7 @@
         <div class="about__text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-          <div class="about__link">
+          <div class="link-wrap">
             <a href="#" class="link">Подробнее <i class="fa fa-angle-right"></i></a>
           </div>
         </div>
@@ -150,18 +150,30 @@
     
     <section class="work wrapper">
       <p class="title-h2">Выполненые работы</p>
-      <div class="work__slider">
-        <div class="work__main">
-          <img src="img/img-1.jpg" alt="Slide" width="688" height="543">
-        </div>
-        <div class="work__thumbs">
+      <div class="work__wrap">
+        <nav class="work__menu">
           <a href="#" class="work__link work__link--active">Шкафы-купе</a>
           <a href="#" class="work__link">Шкафы распашные</a>
           <a href="#" class="work__link">Гардеробные</a>
           <a href="#" class="work__link">Прихожие</a>
+          <div class="link-wrap">
+            <a href="#" class="link">Увидеть больше <i class="fa fa-angle-right"></i></a>
+          </div>
+        </nav>
+        <div class="swiper-container work__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/img-1.jpg" alt="Slide" width="688" height="543">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/img-2.jpg" alt="Slide" width="772" height="514">
+            </div>
+          </div>
+          <div class="swiper-button-prev work__prev"><i class="fa fa-angle-left"></i></div>
+          <div class="swiper-button-next work__next"><i class="fa fa-angle-right"></i></div>
         </div>
-        <a href="#" class="link">Увидеть больше <i class="fa fa-angle-right"></i></a>
       </div>
+      
     </section>
     
     <section class="review wrapper">
@@ -186,19 +198,21 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="link">Читать больше <i class="fa fa-angle-right"></i></a>
+      <div class="link-wrap">
+        <a href="#" class="link">Читать больше <i class="fa fa-angle-right"></i></a>
+      </div>
     </section>
     
     <section class="contacts wrapper">
       <p class="title-h2">Контакты</p>
       <div class="contacts__block">
         <div class="contacts__map">
-          
+          <iframe src="https://snazzymaps.com/embed/107753" width="100%" height="485px" style="border:none;"></iframe>
         </div>
         <div class="contacts__info">
-          <address>г. Москва ул. Чаплыгина 25</address>
-          <a href="tel:+33435752547" class="contacts__phone">+3 (343) 575 25 47</a>
-          <p class="contacts__time"><b>График работы:</b>Пн- Сб: 10:00 - 19:00</p>
+          <address><i class="fa fa-map-marker-alt"></i> г. Москва ул. Чаплыгина 25</address>
+          <a href="tel:+33435752547" class="contacts__phone"><i class="fa fa-phone"></i> +3 (343) 575 25 47</a>
+          <p class="contacts__time"><i class="fa fa-clock"></i> График работы:<span>Пн- Сб: 10:00 - 19:00</span></p>
         </div>
       </div>
     </section>
@@ -219,7 +233,7 @@
         </ul>
       </div>
       <div class="footer__block">
-        <b>Каталог:</b>
+        <p><b>Каталог:</b></p>
         <ul class="footer__list">
           <li><a href="#">Шкафы-купе встроеные</a></li>
           <li><a href="#">Шкафы-купе корпусные</a></li>
@@ -230,7 +244,7 @@
         </ul>
       </div>
       <div class="footer__contacts">
-        <a href="tel:+33435752547" class="footer__phone">+3 (343) 575 25 47</a>
+        <a href="tel:+33435752547" class="footer__phone"><i class="fa fa-phone"></i> +3 (343) 575 25 47</a>
         <a href="#" class="footer__call">Заказать звонок</a>
         <p class="footer__time"><b>График работы:</b>Пн- Сб: 10:00 - 19:00</p>
       </div>
@@ -246,6 +260,16 @@
       pagination: {
         el: '.promo__pagination',
         clickable: true,
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.work__slider', {
+      navigation: {
+        nextEl: '.work__next',
+        prevEl: '.work__prev',
       },
       simulateTouch: false,
       preventClicks: false,
