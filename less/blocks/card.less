@@ -1,0 +1,87 @@
+.card {
+  padding-top: 50px;
+}
+
+.card__calc {
+  width: 234px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: @green;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 2px solid @green;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #000;
+    border-color: #000;
+    .transition();
+  }
+}
+
+.card__price {
+  margin: 0;
+  margin-left: 35px;
+  font-size: 30px;
+}
+
+.card__slider {
+  margin-bottom: 20px;
+}
+
+.card__img-big {
+  display: block;
+  width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  .transition();
+  
+  img {
+    display: block;
+    height: 150px;
+    width: auto;
+  }
+  
+  &:hover,
+  &:active {
+    box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.4);
+    .transition();
+  }
+}
+
+.card__thumbs {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__info {
+  width: 670px;
+  font-size: 18px;
+}
+
+.card__form {
+  width: 400px;
+  padding: 50px 70px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.4);
+}
